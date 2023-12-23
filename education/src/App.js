@@ -4,6 +4,7 @@ import Header from "./components/common/heading/Header";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/home/Home";
 import About from "./components/about/About";
+import CourseHome from "./components/allcourses/CourseHome";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" exact component={About} />
+          <Route path="/courses" exact component={CourseHome} />
         </Switch>
       </Router>
     </>
