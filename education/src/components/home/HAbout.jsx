@@ -1,13 +1,17 @@
 import React from "react";
 import Title from "../common/title/Title";
 import { coursesCard } from "../../dummydata";
+import OnlineCourses from "../allcourses/OnlineCourses";
 
 const HAbout = () => {
   return (
     <>
       <section className="homeAbout">
         <div className="container">
-            <Title subtitle='our courses' title='explore our popular online courses' />
+          <Title
+            subtitle="our courses"
+            title="explore our popular online courses"
+          />
           <div className="coursesCard">
             <div className="grid2">
               {coursesCard.slice(0, 3).map((val) => {
@@ -61,6 +65,7 @@ const HAbout = () => {
           </div>
         </div>
       </section>
+      <OnlineCourses />
     </>
   );
 };
